@@ -16,17 +16,17 @@
 ┃ ┃ engine.transformations[0].<combo> (Chain)
 ┃ ┃  Info Running Chain(Include, Exclude, Chain)
 ┃ ┃ ┏ engine.transformations[0].<combo>.transformations[0] (Include)
-┃ ┃ ┃  Info Will include [**/*.md, **/*.xml, **/*.gradle, **/*.java]
-┃ ┃ ┃ Debug .gitignore didn't match [**/*.md, **/*.xml, **/*.gradle, **/*.java] -> excluded
-┃ ┃ ┃ Debug README.md matched [**/*.md, **/*.xml, **/*.gradle, **/*.java] -> included
-┃ ┃ ┃ Debug asc.png didn't match [**/*.md, **/*.xml, **/*.gradle, **/*.java] -> excluded
-┃ ┃ ┃ Debug build.gradle matched [**/*.md, **/*.xml, **/*.gradle, **/*.java] -> included
-┃ ┃ ┃ Debug checkstyle/checkstyle.xml matched [**/*.md, **/*.xml, **/*.gradle, **/*.java] -> included
-┃ ┃ ┃ Debug checkstyle/format.xml matched [**/*.md, **/*.xml, **/*.gradle, **/*.java] -> included
-┃ ┃ ┃ Debug pom.xml matched [**/*.md, **/*.xml, **/*.gradle, **/*.java] -> included
-┃ ┃ ┃ Debug settings.gradle matched [**/*.md, **/*.xml, **/*.gradle, **/*.java] -> included
-┃ ┃ ┃ Debug src/main/java/io/cloudevents/examples/springboot/Application.java matched [**/*.md, **/*.xml, **/*.gradle, **/*.java] -> included
-┃ ┃ ┗ Debug src/main/resources/application.properties didn't match [**/*.md, **/*.xml, **/*.gradle, **/*.java] -> excluded
+┃ ┃ ┃  Info Will include [**/*.md, **/*.xml, **/*.gradle, **/*.java, **/*.properties]
+┃ ┃ ┃ Debug .gitignore didn't match [**/*.md, **/*.xml, **/*.gradle, **/*.java, **/*.properties] -> excluded
+┃ ┃ ┃ Debug README.md matched [**/*.md, **/*.xml, **/*.gradle, **/*.java, **/*.properties] -> included
+┃ ┃ ┃ Debug asc.png didn't match [**/*.md, **/*.xml, **/*.gradle, **/*.java, **/*.properties] -> excluded
+┃ ┃ ┃ Debug build.gradle matched [**/*.md, **/*.xml, **/*.gradle, **/*.java, **/*.properties] -> included
+┃ ┃ ┃ Debug checkstyle/checkstyle.xml matched [**/*.md, **/*.xml, **/*.gradle, **/*.java, **/*.properties] -> included
+┃ ┃ ┃ Debug checkstyle/format.xml matched [**/*.md, **/*.xml, **/*.gradle, **/*.java, **/*.properties] -> included
+┃ ┃ ┃ Debug pom.xml matched [**/*.md, **/*.xml, **/*.gradle, **/*.java, **/*.properties] -> included
+┃ ┃ ┃ Debug settings.gradle matched [**/*.md, **/*.xml, **/*.gradle, **/*.java, **/*.properties] -> included
+┃ ┃ ┃ Debug src/main/java/io/cloudevents/examples/springboot/Application.java matched [**/*.md, **/*.xml, **/*.gradle, **/*.java, **/*.properties] -> included
+┃ ┃ ┗ Debug src/main/resources/application.properties matched [**/*.md, **/*.xml, **/*.gradle, **/*.java, **/*.properties] -> included
 ┃ ┃ ┏ engine.transformations[0].<combo>.transformations[1] (Exclude)
 ┃ ┃ ┃  Info Will exclude [*.png]
 ┃ ┃ ┃ Debug README.md didn't match [*.png] -> included
@@ -35,7 +35,8 @@
 ┃ ┃ ┃ Debug checkstyle/format.xml didn't match [*.png] -> included
 ┃ ┃ ┃ Debug pom.xml didn't match [*.png] -> included
 ┃ ┃ ┃ Debug settings.gradle didn't match [*.png] -> included
-┃ ┃ ┗ Debug src/main/java/io/cloudevents/examples/springboot/Application.java didn't match [*.png] -> included
+┃ ┃ ┃ Debug src/main/java/io/cloudevents/examples/springboot/Application.java didn't match [*.png] -> included
+┃ ┃ ┗ Debug src/main/resources/application.properties didn't match [*.png] -> included
 ┃ ┃ ┏ engine.transformations[0].<combo>.transformations[2] (Chain)
 ┃ ┃ ┃  Info Running Chain(Merge, UniquePath)
 ┃ ┃ ┃ ┏ engine.transformations[0].<combo>.transformations[2].transformations[0] (Merge)
@@ -54,7 +55,8 @@
 ┃ ┃ ┃ ┃ ┃ ┃ Debug checkstyle/format.xml matched [**/*.xml] -> included
 ┃ ┃ ┃ ┃ ┃ ┃ Debug pom.xml matched [**/*.xml] -> included
 ┃ ┃ ┃ ┃ ┃ ┃ Debug settings.gradle didn't match [**/*.xml] -> excluded
-┃ ┃ ┃ ┃ ┃ ┗ Debug src/main/java/io/cloudevents/examples/springboot/Application.java didn't match [**/*.xml] -> excluded
+┃ ┃ ┃ ┃ ┃ ┃ Debug src/main/java/io/cloudevents/examples/springboot/Application.java didn't match [**/*.xml] -> excluded
+┃ ┃ ┃ ┃ ┃ ┗ Debug src/main/resources/application.properties didn't match [**/*.xml] -> excluded
 ┃ ┃ ┃ ┃ ┃ ┏ engine.transformations[0].<combo>.transformations[2].transformations[0].sources[0].<combo>.transformations[1] (Chain)
 ┃ ┃ ┃ ┃ ┃ ┃  Info Running Chain(ReplaceText)
 ┃ ┃ ┃ ┃ ┃ ┃ ┏ engine.transformations[0].<combo>.transformations[2].transformations[0].sources[0].<combo>.transformations[1].transformations[0] (ReplaceText)
@@ -65,14 +67,15 @@
 ┃ ┃ ┃ ┃ ┏ engine.transformations[0].<combo>.transformations[2].transformations[0].sources[2] (Combo)
 ┃ ┃ ┃ ┃ ┃  Info Combo running as Include
 ┃ ┃ ┃ ┃ ┃ engine.transformations[0].<combo>.transformations[2].transformations[0].sources[2].include (Include)
-┃ ┃ ┃ ┃ ┃  Info Will include [**/*.java, README.md]
-┃ ┃ ┃ ┃ ┃ Debug README.md matched [**/*.java, README.md] -> included
-┃ ┃ ┃ ┃ ┃ Debug build.gradle didn't match [**/*.java, README.md] -> excluded
-┃ ┃ ┃ ┃ ┃ Debug checkstyle/checkstyle.xml didn't match [**/*.java, README.md] -> excluded
-┃ ┃ ┃ ┃ ┃ Debug checkstyle/format.xml didn't match [**/*.java, README.md] -> excluded
-┃ ┃ ┃ ┃ ┃ Debug pom.xml didn't match [**/*.java, README.md] -> excluded
-┃ ┃ ┃ ┃ ┃ Debug settings.gradle didn't match [**/*.java, README.md] -> excluded
-┃ ┃ ┃ ┗ ┗ Debug src/main/java/io/cloudevents/examples/springboot/Application.java matched [**/*.java, README.md] -> included
+┃ ┃ ┃ ┃ ┃  Info Will include [**/*.java, README.md, **/*.properties]
+┃ ┃ ┃ ┃ ┃ Debug README.md matched [**/*.java, README.md, **/*.properties] -> included
+┃ ┃ ┃ ┃ ┃ Debug build.gradle didn't match [**/*.java, README.md, **/*.properties] -> excluded
+┃ ┃ ┃ ┃ ┃ Debug checkstyle/checkstyle.xml didn't match [**/*.java, README.md, **/*.properties] -> excluded
+┃ ┃ ┃ ┃ ┃ Debug checkstyle/format.xml didn't match [**/*.java, README.md, **/*.properties] -> excluded
+┃ ┃ ┃ ┃ ┃ Debug pom.xml didn't match [**/*.java, README.md, **/*.properties] -> excluded
+┃ ┃ ┃ ┃ ┃ Debug settings.gradle didn't match [**/*.java, README.md, **/*.properties] -> excluded
+┃ ┃ ┃ ┃ ┃ Debug src/main/java/io/cloudevents/examples/springboot/Application.java matched [**/*.java, README.md, **/*.properties] -> included
+┃ ┃ ┃ ┗ ┗ Debug src/main/resources/application.properties matched [**/*.java, README.md, **/*.properties] -> included
 ┃ ┗ ┗ ╺ engine.transformations[0].<combo>.transformations[2].transformations[1] (UniquePath)
 ┗ ╺ engine.transformations[1] (UniquePath)
 ```
