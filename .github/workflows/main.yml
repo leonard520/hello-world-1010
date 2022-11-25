@@ -22,7 +22,7 @@ jobs:
 
       - name: Sign the images
         run: |
-          cosign sign wepatestacr.azurecr.io/nginx:latest
+          cosign sign wepatestacr.azurecr.io/nginx:latest --force
         env:
           COSIGN_EXPERIMENTAL: 1
 
