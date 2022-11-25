@@ -18,12 +18,6 @@ jobs:
           username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_TOKEN }}
 
-      - name: build+push
-        uses: docker/build-push-action@v2.7.0
-        with:
-          push: true
-          tags: wepatestacr.azurecr.io/nginx:latest
-
       - uses: sigstore/cosign-installer@main
 
       - name: Sign the images
