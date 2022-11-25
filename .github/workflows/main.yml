@@ -28,6 +28,6 @@ jobs:
 
       - name: Verify the images
         run: |
-          cosign verify wepatesacr.azurecr.io/nginx:latest
+          cosign verify wepatestacr.azurecr.io/nginx:latest
         env:
           COSIGN_EXPERIMENTAL: 1
