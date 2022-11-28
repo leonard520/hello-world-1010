@@ -20,7 +20,7 @@ jobs:
 
       - uses: anchore/sbom-action@v0
         with:
-          image: wepatestacr.azurecr.io/nginx:latest
+          image: wepatestacr.azurecr.io/nginx
           registry-username: ${{ secrets.ACR_USERNAME }}
           registry-password: ${{ secrets.ACR_TOKEN }}
     
