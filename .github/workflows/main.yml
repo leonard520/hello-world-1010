@@ -18,6 +18,12 @@ jobs:
           username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_TOKEN }}
 
+      - uses: anchore/sbom-action@v0
+        with:
+          image: wepatestacr.azurecr.io/nginx:latest
+          registry-username: ${{ secrets.ACR_USERNAME }}
+          registry-password: ${{ secrets.ACR_TOKEN }}
+    
       - uses: sigstore/cosign-installer@main
 
       - name: Sign the images
