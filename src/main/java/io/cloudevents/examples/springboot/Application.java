@@ -46,7 +46,7 @@ public class Application {
 
     @GetMapping("/sns")
     public String echo() {
-        return Arrays.toString(messages.toArray());
+        return Arrays.toString(messages.toArray()) + "\n";
     }
 
     @PostMapping("/")
