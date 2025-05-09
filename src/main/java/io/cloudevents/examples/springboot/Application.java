@@ -46,7 +46,10 @@ public class Application {
 
     @GetMapping("/sns")
     public String echo() {
-        return Arrays.toString(messages.toArray());
+        if (messages.isEmpty()) {
+            return "No messages received yet.\n";
+        }
+        return Arrays.toString(messages.toArray()) + "\n";
     }
 
     @PostMapping("/")
